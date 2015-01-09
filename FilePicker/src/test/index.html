@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test File Picker</title>
+    <script type="text/javascript" src="https://dev.ebricks-inc.com/sharefile-auth.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Run Tests</h2>
+            <div style="margin-bottom: 5px;">
+                <div style="width: 150px; display: inline-block;">*Redirect URL::</div>
+                <input id="txtURL" type="text" value="https://dev.ebricks-inc.com/test/testrunner.html" size="50" />
+            </div>
+            
+            <div style="margin-bottom: 5px;">
+                <div style="width: 150px; display: inline-block;">*Client Id::</div>
+                <input id="txtCID" type="text" value="2nX4C4G1e7oGPBBzHITX6enoFrJgHNKM" size="50" />
+            </div>
+            <div style="margin-bottom: 5px;">
+                <div style="width: 150px; display: inline-block;">Authentication URL::</div>
+                <input id="txtAuthUrl" type="text" value="" size="50" />
+                <span style="font-size: 12px;">(if not provided default will be used.)</span>
+            </div>
+            <span style="font-size: 12px;">(2 mandatory parameters: redirectUri & clientId required. If not provided then by default Ebricks configurations will be used)
+            </span>
+        </div>
+        <br />
+        <div>
+            Click to connect to Ebricks ShareFile for running Tests.<input type="button" id="sfLogin" value="Connect ShareFile" onclick="fpLogin();" />
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        function fpLogin() {
+            var redirectUri = document.getElementById("txtURL").value;
+            var clientId = document.getElementById("txtCID").value;
+            var authUri = document.getElementById("txtAuthUrl").value;
+            var params = {
+                redirectUri: redirectUri,
+                clientId: clientId
+            };
+            if (authUri.length > 0) {
+                params.authorizationUrl = authUri;
+            } else {
+                params.authorizationUrl = "https://secure.sharefile.com/oauth/authorize";
+            }
+            
+            window.location = params.authorizationUrl + "?response_type=token&client_id=" + encodeURIComponent(params.clientId) + "&redirect_uri=" + encodeURIComponent(params.redirectUri) + "&state=";
+        }
+
+    </script>
+</body>
+</html>
+
+

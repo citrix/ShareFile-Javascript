@@ -1,0 +1,195 @@
+/* This is the default theme contains colors and images */
+
+/* change the body background */
+body {
+   
+}
+
+/* change the default link colors */
+a,
+a:visited,
+a:focus,
+a:active,
+a.active {
+   color:#555555;
+}
+a:hover { color:#000000; }
+
+/* change the background of content area */
+#wraper { background:#ffffff; }
+
+/* change the background of top dark grey bar and logo image */
+#topBar { background:url(../img/misc/bg_sf-masthead.png) repeat-x 0 0; }
+#topBar .logo {  }
+#topBar .logo a, #topBar .logo a { background:url(../img/misc/logo.png) repeat-x 0 0; }
+
+/* change the colors of tabs */
+#tab { border:1px solid #e0e0e0; background:#ffffff; }
+.tabWrap a, .tabWrap a:visited { color:#555555; border-bottom:1px solid #ffffff; }
+.tabWrap a.active, .tabWrap a.active:visited { color:#555555; border-left:1px solid #e0e0e0; border-right:1px solid #e0e0e0; border-top:5px solid #98c93c; background:#ffffff; }
+.tabWrap a.myfiles, .tabWrap a.myfiles:visited { background:url(../img/icons-64/user.png) no-repeat 10px 3px; background-size:24px 24px; }
+.tabWrap a.shared, .tabWrap a.shared:visited { background:url(../img/icons-64/share.png) no-repeat 10px 3px; background-size:24px 24px; }
+.tabWrap a.fav, .tabWrap a.fav:visited { background:url(../img/icons-64/fav.png) no-repeat 10px 3px; background-size:24px 24px; }
+.tabWrap { border-bottom:1px solid #e0e0e0; }
+
+
+/* change the colors of files displaying rows */
+.contents ul li { 
+	border-bottom:1px solid #eeeeee;
+}
+.contents ul li:active, .contents ul li.active { 
+	background:#eeeeee;
+}
+.contents ul li span.type { 
+	color:#666666;
+}
+.contents ul li span.modified { 
+	color:#666666;
+}
+.contents ul li span.size { color:#666666; }
+.contents ul li span.name input[type='text'] { 
+	border:1px solid #cccccc;
+}
+
+/* change the colors of left sidebar */
+#sidebar  {  background:#ffffff; }
+#sidebar li a.files, #sidebar li a:visited.files {
+	background:url(../img/icons-32/files.png) no-repeat 0 0;
+	background-size:16px 16px;
+}
+#sidebar li a.photos, #sidebar li a:visited.photos {
+	background:url(../img/icons-32/photos.png) no-repeat 0 0;
+	background-size:16px 16px;
+}
+#sidebar li a.inbox, #sidebar li a:visited.inbox {
+	background:url(../img/icons-32/inbox.png) no-repeat  0 0;
+	background-size:16px 16px;
+}
+#sidebar li a.trash, #sidebar li a:visited.trash {
+	background:url(../img/icons-32/trash.png) no-repeat  1px 0;
+	background-size:16px 16px;
+}
+header { background:#ffffff; }
+#logo, #logo a, #logo a:visited { 
+		background:url(../img/misc/icons.png) no-repeat left top;
+		background-size:32px 350px; 
+}
+
+
+/* change the colors/icons of breadcrumb */
+.breadcrumb { 
+		color:#444444;
+}
+.breadcrumb a, .breadcrumb a:visited { 
+		color:#555555;
+		background:url(../img/misc/breadcrumb.png) no-repeat right 6px;
+		background-size:8px 9px;
+}
+.breadcrumb a:hover { 
+		color:#000000;
+}
+
+.breadcrumb a.inactive, .breadcrumb a.inactive:visited { 
+		color:#999999;
+		background:none;
+}
+.breadcrumb a.inactive:hover { 
+		color:#000000;
+}
+
+/* change the icons of current folder icon */
+.currentDir a.current, .currentDir a.current:visited { 
+	background:url(../img/icons-64/folder.png) no-repeat 0 -3px;
+	background-size:32px 32px;
+}
+
+.currentDir a.refresh, .currentDir a.refresh:visited {
+	background:url(../img/icons-48/refresh.png) no-repeat 0 0;
+	background-size:24px 24px;
+}
+.currentDir a.refresh:active, .currentDir a.refresh:hover {
+	background:url(../img/icons-48/refresh-active.png) no-repeat 0 0;
+	background-size:24px 24px;
+}
+
+
+/* change the icons of main icons with search box */
+.navbarIcons li a.upload-file {
+	background:url(../img/icons-48/upload-file.png) no-repeat 0 0;
+	background-size:24px 24px;
+}
+.navbarIcons li a.create-folder {
+	background:url(../img/icons-48/newfolder.png) no-repeat 0 0;
+	background-size:24px 24px;
+}
+.navbarIcons li a.view-trash {
+	background:url(../img/icons-48/trash.png) no-repeat 0 0;
+	background-size:24px 24px;
+}
+
+/* change the colors of searchbar */
+.searchBox {}
+.searchBox input.inputBox{ 
+	border:1px solid #cccccc;
+}
+
+/* change the colors/icons of action bar */
+.fileOptions  {
+	border-top:5px solid #98c93c;
+	background:#e6e6e6;
+}
+.fileOptions li a.download, .fileOptions li a:visited.download {
+	background:url(../img/icons-32/download.png) no-repeat 0 0;
+	background-size:16px 16px;
+}
+.fileOptions li a.send, .fileOptions li a:visited.send {
+	background:url(../img/icons-32/send.png) no-repeat 0 0;
+	background-size:16px 16px;
+}
+.fileOptions li a.more, .fileOptions li a:visited.more {
+	background:url(../img/misc/more.png) no-repeat right 8px;
+	background-size:10px 5px;
+}
+
+.fileOptions li a.copy, .fileOptions li a:visited.copy {
+	background:url(../img/icons-32/copy.png) no-repeat 0 0;
+	background-size:16px 16px;
+}
+
+
+/* change the colors/icons of file info panel */
+.navTitle  {
+	border-bottom:1px solid #cccccc;
+}
+.navTitle li a, .navTitle li a:visited {
+	color:#555555;
+}
+
+.navTitle li a.sorted, .navTitle li a.sorted:visited {
+	background:url(../img/misc/sort.png) no-repeat;
+	background-position:32px 7px;
+	background-size:13px 6px;
+}
+.navTitle li a.size, .navTitle li a.size:visited {
+	background-position:30px 7px !important;
+	background-size:13px 6px;
+}
+.navTitle li a.modified, .navTitle li a.modified:visited {
+	background-position:68px 7px !important;
+	background-size:13px 6px;
+}
+.navTitle li a.created, .navTitle li a.created:visited {
+	background-position:55px 7px !important;
+	background-size:13px 6px;
+}
+
+
+/* change the colors of footer */
+footer {
+	background:#ffffff;
+    border-top:1px solid #cccccc;
+}
+.footerLinks {float:left;  }
+.footerLinks a, .footerLinks a:visited{  color:#999999; }
+.footerLinks a:hover{  color:#666666; }
+.copyright { color:#999999; }

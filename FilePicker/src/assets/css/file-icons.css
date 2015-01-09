@@ -1,0 +1,43 @@
+/* all file types icons and the folder icon classes are here if you want to add or remove */
+a.icon, a.icon:visited{ 
+	background:url(../img/icons-64/unknown.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.folder, a.folder:visited{ 
+	background:url(../img/icons-64/folder.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.mp3, a.mp3:visited, a.ac3, a.ac3:visited, a.m3u, a.m3u:visited, a.wmi, a.wmi:visited, a.ra, a.ra:visited { 
+	background:url(../img/icons-64/audio.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.avi, a.avi:visited, a.mpg, a.mpg:visited, a.mpeg, a.mpeg:visited, a.wmv, a.wmv:visited, a.fla, a.fla:visited { 
+	background:url(../img/icons-64/video.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.txt, a.txt:visited, a.htm, a.htm:visited, a.html, a.html:visited, a.xml, a.xml:visited { 
+	background:url(../img/icons-64/txt.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.pdf, a.pdf:visited{ 
+	background:url(../img/icons-64/pdf.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.doc, a.doc:visited, a.docx, a.docx:visited, a.docm, a.docm:visited, a.dotx, a.dotx:visited,
+a.dot, a.dot:visited, a.rtf, a.rtf:visited, a.xls, a.xls:visited, a.xlsx, a.xlsx:visited,
+a.csv, a.csv:visited, a.xla, a.xla:visited, a.pptx, a.pptx:visited, a.ppt, a.ppt:visited { 
+	background:url(../img/icons-64/doc.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+a.zip, a.zip:visited, a.rar, a.rar:visited, a.gz, a.gz:visited, a.tar, a.tar:visited{ 
+	background:url(../img/icons-64/zip.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+
+a.jpg, a.jpg:visited, a.jpeg, a.jpeg:visited, a.jpe, a.jpe:visited, a.jfif, a.jfif:visited, 
+a.tif, a.tif:visited, a.tiff, a.tiff:visited, a.gif, a.gif:visited, a.png, a.png:visited, 
+a.bmp, a.bmp:visited, a.dib, a.dib:visited, a.psd, a.psd:visited { 
+	background:url(../img/icons-64/image.png) no-repeat 0 0;
+	background-size:32px 32px;
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FilePicker test results</title>
+    <link rel="stylesheet" href="blanket/vendor/mocha.css" />
+
+    <script src="blanket/vendor/mocha.js"></script>
+
+    <script type="text/javascript" src="blanket/vendor/chai.js"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/filepicker.js" data-cover></script>
+
+    <script type="text/javascript" src="blanket/blanket.min.js"></script>
+
+    <script type="text/javascript" src="blanket/adapters/mocha-blanket.js"></script>
+
+    <script type="text/javascript">mocha.setup('bdd')</script>
+
+    <script>
+        mocha.run();
+    </script>
+
+    <script type="text/javascript" src="tests.js"></script>
+
+</head>
+<body>
+    <div style="display: none;">
+        <div id="topBar">
+            <div class="logo"><a href="javascript:void(0);"></a></div>
+        </div>
+        <div id="wraper">
+            <nav id="sidebar">
+                <ul>
+                    <li><a id="allFiles" class="files strong" title="files" href="javascript:void(0);">File Box</a></li>
+                    <li><a id="photosFilter" class="photos" title="photos" href="javascript:void(0);">Photos</a></li>
+                    <li><a class="inbox fade" title="inbox" href="javascript:void(0);">Inbox</a></li>
+                    <li><a class="trash fade" title="trash" href="javascript:void(0);">Trash</a></li>
+                </ul>
+            </nav>
+
+            <div id="content">
+                <header class="header">
+                    <div class="tabWrap">
+                        <a href="javascript:void(0);" class="myfiles active">My Files & Folders</a>
+                        <a href="javascript:void(0);" class="shared fade">Shared Folders</a>
+                        <a href="javascript:void(0);" class="fav fade">Favorite Folders</a>
+                    </div>
+                    <div id="breadcrumbLinks" class="breadcrumb">
+                    </div>
+                    <div class="searchBox">
+                        <a id="clearSearch" href="javascript:void(0);" class="cross">x</a>
+                        <input id="searchTxt" class="inputBox" type="text" name="search" placeholder="Search">
+                    </div>
+
+                    <div class="currentDir">
+                        <a id="currentFolder" href="javascript:void(0);" class="current">Current Folder</a>
+                        <!--<a href="javascript:void(0);" class="refresh" title="Refresh"></a>-->
+                    </div>
+
+                    <nav class="navbarIcons">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="upload-file fade" title="Upload File"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="create-folder fade" title="Creare Folder"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="view-trash fade" title="View Trash"></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="fileOptions">
+                        <ul>
+                            <li>
+                                <a id="download" href="javascript:void(0);" class="download" title="Download">Download</a>
+                            </li>
+                            <li>
+                                <a id="copyLink" href="javascript:void(0);" class="send" title="Copy download link">Copy link</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="more fade" title="More">More Actions</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navTitle">
+                        <ul>
+                            <li class="checkBox">
+                                <input id="chkSelectAll" type="checkbox" />
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="name sorted" title="Name">Title</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="size" title="size">Size</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="modified" title="Modified">Modified</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="created" title="Created">Owner</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <section id="contentsSection" class="contents">
+            </section>
+
+            <footer>
+                <div class="footerLinks">
+                    <a href="javascript:void(0);">Help</a>
+                    <a href="javascript:void(0);">Privacy</a>
+                    <a href="javascript:void(0);">Contact</a>
+                </div>
+                <div class="copyright">Powered by Sharefile</div>
+            </footer>
+
+            <iframe id="frameDownloader" name="frameDownloader" style="width: 0px; height: 0px; border: 0;"></iframe>
+
+        </div>
+    </div>
+    <h5>It will take about 60 seconds for a complete execution cycle.</h5>
+    <div id="mocha">
+    </div>
+</body>
+</html>

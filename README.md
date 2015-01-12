@@ -41,4 +41,7 @@ After successful login the user will be navigated to FilePicker main page (speci
 
 Following is diagram to show communication between FilePicker and ShareFile server:  
 
-
+License
+----
+All code is licensed under the [MIT
+License](https://github.com/citrix/ShareFile-Javascript/LICENSE.txt).

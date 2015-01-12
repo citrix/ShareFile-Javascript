@@ -41,3 +41,4 @@ After successful login the user will be navigated to FilePicker main page (speci
 
 Following is diagram to show communication between FilePicker and ShareFile server:  
 
+

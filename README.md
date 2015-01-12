@@ -44,4 +44,4 @@ Following is diagram to show communication between FilePicker and ShareFile serv
 License
 ----
 All code is licensed under the [MIT
-License](https://github.com/citrix/ShareFile-Javascript/LICENSE.txt).
+License](https://github.com/citrix/ShareFile-Javascript/blob/master/LICENSE).

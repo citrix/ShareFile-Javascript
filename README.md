@@ -8,8 +8,11 @@ This repository contains several projects known as Solution Kits.  These kits al
 How to use the FilePicker
 ----
 Very easy to use in two steps:
+
 1.	Deploy the filepicker utility in user’s host server location
 2.	Authorize request by including sharefile-auth javascript file in user’s page
+
+
 Deploy FilePicker Library
 Download filepicker source code from this repository
 Deploy the code to the website with the redirect URI you have registered with your ShareFile oAuth token.

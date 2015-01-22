@@ -30,19 +30,17 @@ After including the filepicker-auth.js file in code, the following function will
 
     FilePicker.secureLogin(params);
 
-    //If authorization url is other than default one then also set following            optional parameter before calling login method:
+    //If authorization url is other than default one then also set following optional parameter before calling login method:
     params.authorizationUrl = authUri;
-Set the proper attribute values and on calling above function, following login page/dialog will be displayed:
+Set the proper attribute values and call the function above and a login page/dialog will be displayed.
  
 Input the credentials and click Login button to proceed.
 
-Following is the diagram for user account authorization flow to retrieve access token:  
 
 FilePicker Usage
 ----
-After successful login the user will be navigated to FilePicker main page (specified in redirectUri parameter) and page will be displayed like following diagram:  
+After successful login the user will be navigated to FilePicker main page (specified in redirectUri parameter)
 
-Following is diagram to show communication between FilePicker and ShareFile server:  
 
 License
 ----
